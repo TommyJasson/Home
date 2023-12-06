@@ -56,17 +56,18 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        width: 15%;
         background-color: black;
-        position: fixed;
-        height: 100%;
-        overflow: inherit;
+        overflow: hidden;
         color: white;
+        text-align: center;
+      }
+
+      ul.sidenav li {
+        display: inline-block;
+        padding: 15px;
       }
 
       ul.sidenav li a {
-        display: block;
-        padding: 8px 16px;
         text-decoration: none;
         color: grey;
       }
@@ -82,30 +83,30 @@
       }
 
       div.content {
-        padding: 1px 16px;
-        height: 1000px;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
       }
 
-      @media screen and (max-width: 1600px) {
-        ul.sidenav {
-          width: 100%;
-          height: auto;
-          position: relative;
-          color: white;
-        }
+      .leftcolumn {
+        flex: 1;
+        text-align: center;
+      }
 
-        ul.sidenav li a {
-          float: left;
-          padding: 15px;
-          color: grey;
-        }
+      img {
+        width: 100%;
+        height: auto;
+      }
 
-        div.content {
-          margin-left: 0;
-        }
+      .rightcolumn {
+        flex: 1;
+        text-align: left;
+      }
+
+      .text {
+        margin: 5px;
+        color: white;
       }
 
       @media screen and (max-width: 800px) {
@@ -113,49 +114,14 @@
           width: 100%;
           text-align: center;
         }
-
-        .leftcolumn img {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      @media screen and (min-width: 801px) {
-        .row {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .leftcolumn {
-          flex: 1;
-        }
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-
-        .rightcolumn {
-          flex: 1;
-        }
-
-        .text {
-          position relative
-          text-align: left;
-          max-width: 100%;
-          margin: 5px;
-        }
       }
 
       /* Copied Code Ends Here*/
 
       body {
         background-color: black;
-      }
-
-      .home {
-        position: fixed;
+        margin: 0;
+        font-family: "Didot", serif;
       }
     </style>
   </head>
@@ -172,21 +138,15 @@
     </nav>
 
     <div class="content">
-      <div id="home">
-        <div class="row">
-          <div class="leftcolumn">
-            <img src="Tommy.png" alt="description of image">
-          </div>
+      <div class="leftcolumn">
+        <img src="Tommy.png" alt="description of image">
+      </div>
 
-          <div class="rightcolumn">
-            <div class="text">
-              <h1 class="Header1"> Tommy Jasson </h1>
-            </div>
-          </div>
+      <div class="rightcolumn">
+        <div class="text">
+          <h1 class="Header1"> Tommy Jasson </h1>
         </div>
       </div>
     </div>
   </body>
 </html>
-
-
