@@ -99,7 +99,6 @@
         padding: 15px;
         color: grey;
       }
-
       div.content {margin-left: 0;}
     }
 
@@ -119,24 +118,35 @@
     
     .leftcolumn {
   float: left;
-  width: 75%;
+  width: 50%;
 
     } 
+     img{
+    position: relative;
+    top: %;
+  	left: 20%;
+    height: 50%;
+    width: auto;
+    }
     
-  	.rightcolumn{
-      float: right;
-      width: 35%
-      }
-    
-  	.text {
- 	 	position: relative;
-  	top: 50%;
-  	left: 50%;
-      max-height: auto;
-        max-width: 50%;
-      margin: 5px;
-  	color: white;
-		}
+  	.rightcolumn {
+  float: right;
+  width: 50%;
+  position: relative;
+}
+
+.text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%);
+  max-height: auto;
+  max-width: 50%;
+  margin: 5px;
+  color: white;
+  text-align: center;
+}
+
 
   </style>
 </head>
@@ -158,18 +168,17 @@
     <div id="home">
       <div class="row">
         <div class="leftcolumn">
-          <img src="Tommy .png" alt="description of image">
-        <div class="rightcolumn">
-          <h1 class="Header1"> Tommy Jasson </h1>
-        </div>
-        </div>
-      </div>
-    <div class="img">
-        <div class="text"> 
-          <p class="Header2"> This Website was created to learn more about me</p>
-        </div>
-    </div>  
+  <img src="Tommy.png" alt="description of image">
+</div>
+
+<div class="rightcolumn">
+  <div class="text"> 
+    <h1 class="Header1"> Tommy Jasson </h1>
+  </div>
     </div>
-	</div>
+    </div>
+      <p>This Website was created to learn more about me!</p>
+  </div>
+</div>
 </body>
 </html>
