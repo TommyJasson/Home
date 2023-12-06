@@ -50,14 +50,7 @@
         color: white;
         font-weight: 500;
     }
-<!--
-Code copied from: https://www.w3schools.com/css/css_navbar_horizontal.asp
-Author: w3schools.com
-Name: CSS Horizontal Navigation Bar
-Description: Responsive Nav Bar.
-Date retrieved: Dec. 1st, 2023
--->
-<!--Copied Code Starts -->   
+
     ul.sidenav {
       list-style-type: none;
       margin: 0;
@@ -115,8 +108,7 @@ Date retrieved: Dec. 1st, 2023
         text-align: center;
         float: none;
       }
-    }
-  <!-- Copied code ends -->    
+    } 
     body {
       background-color: black;
     }
@@ -125,20 +117,19 @@ Date retrieved: Dec. 1st, 2023
     position: fixed;
     }
     
-    img {
-    position: float;
-    top: 14%;
-  	left: 20%;
-      min-height: 70%;
-      max-height: 100%;
-      min-width: 30%;
-        max-width: 40%;
-      padding: 10px;
-      margin: -5%;
-    }
+    .leftcolumn {
+  float: left;
+  width: 75%;
+
+    } 
+    
+  	.rightcolumn{
+      float: right;
+      width: 35%
+      }
     
   	.text {
- 	 	position: float;
+ 	 	position: relative;
   	top: 50%;
   	left: 50%;
       max-height: auto;
@@ -165,12 +156,17 @@ Date retrieved: Dec. 1st, 2023
 
   <div class="content">
     <div id="home">
+      <div class="row">
+        <div class="leftcolumn">
+          <img src="Tommy .png" alt="description of image">
+        <div class="rightcolumn">
+          <h1 class="Header1"> Tommy Jasson </h1>
+        </div>
+        </div>
+      </div>
     <div class="img">
-      <img src="Tommy.png" alt="Homepage">
         <div class="text"> 
-        <h1 class="Header1"> Tommy Jasson </h1>
           <p class="Header2"> This Website was created to learn more about me</p>
-          <h2 class="Body1"> By Tommy Jasson</h2>
         </div>
     </div>  
     </div>
